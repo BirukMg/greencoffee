@@ -1,0 +1,23 @@
+{
+  "name": "mvv",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "mission": {
+      "type": "string"
+    },
+    "vision": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

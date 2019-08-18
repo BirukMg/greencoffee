@@ -1,0 +1,22 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mysql": {
+    "host": "localhost",
+    "port": 3306,
+    "url": "",
+    "database": "coffee",
+    "password": "",
+    "name": "mysql",
+    "user": "root",
+    "connector": "mysql"
+  },
+  "files": {
+    "name": "files",
+    "connector": "loopback-component-storage",
+    "provider": "filesystem",
+    "root": "./server/storage"
+  }
+}

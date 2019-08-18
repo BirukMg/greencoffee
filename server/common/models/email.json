@@ -1,0 +1,70 @@
+{
+  "name": "email",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "from": {
+      "type": "string"
+    },
+    "subject": {
+      "type": "string"
+    },
+    "text": {
+      "type": "string"
+    },
+    "html": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {
+    "prototype.sendEmail": {
+      "accepts": [
+        {
+          "arg": "from",
+          "type": "string",
+          "required": true,
+          "description": "sender email address"
+        },
+        {
+          "arg": "subject",
+          "type": "string",
+          "required": false,
+          "description": "email subject"
+        },
+        {
+          "arg": "text",
+          "type": "string",
+          "required": true,
+          "description": "email body"
+        },
+        {
+          "arg": "html",
+          "type": "string",
+          "required": false,
+          "description": "html body"
+        }
+      ],
+      "returns": [
+        {
+          "arg": "result",
+          "type": "object",
+          "root": true,
+          "description": "result of email message"
+        }
+      ],
+      "description": "sending email from users",
+      "http": [
+        {
+          "path": "/sendemail",
+          "verb": "post"
+        }
+      ]
+    }
+  }
+}

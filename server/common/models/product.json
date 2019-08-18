@@ -1,0 +1,44 @@
+{
+  "name": "product",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "area": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "img": {
+      "type": "string",
+      "default": null
+    },
+    "active": {
+      "type": "boolean",
+      "default": true
+    },
+    "show_home": {
+      "type": "boolean",
+      "default": false
+    },
+    "price": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

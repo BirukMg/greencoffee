@@ -1,0 +1,106 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "db"
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "product": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "admin": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "category": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "area": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "home_page_header": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "home_page_service": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "destination": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "membership": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "certificate": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "gallery": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "about_pharagraph": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "team": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "mvv": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "administrator": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "social_address": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "blog": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "email": {
+    "dataSource": "mysql",
+    "public": true
+  }
+}

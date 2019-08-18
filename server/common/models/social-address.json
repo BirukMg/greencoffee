@@ -1,0 +1,42 @@
+{
+  "name": "social_address",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "facebook": {
+      "type": "string"
+    },
+    "twitter": {
+      "type": "string"
+    },
+    "googleplus": {
+      "type": "string"
+    },
+    "instagram": {
+      "type": "string",
+      "default": "linkedin"
+    },
+    "linkedin": {
+      "type": "string"
+    },
+    "telegram": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "phone_number": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
