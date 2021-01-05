@@ -10,7 +10,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "flags-dropdown-vue": "^1.0.3",
     "hooper": "0.0.9",
     "mdbvue": "^5.7.0",
